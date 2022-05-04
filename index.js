@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-const url = 'mongodb+srv://brunomaria71:Temppass123@cluster0.mtctt.mongodb.net?retryWrites=true&w=majority'
+const url = 'url from my databse'
 const options = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
