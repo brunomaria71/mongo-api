@@ -1,13 +1,16 @@
 const express = require ('express')
 const mongo = require('mongodb').MongoClient
 const cors = require ('cors')
-const { send } = require('express/lib/response')
+require('dotenv/config')
+
+
 
 const app = express()
 app.use(cors())
 app.use(express.json())
 
-const url = 'url from my databse'
+const url = process.env.MONGO_URL 
+
 const options = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
